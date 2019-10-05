@@ -1,0 +1,31 @@
+//  adding styles to the table
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    top:200px;
+    left:600px;
+    position: absolute;
+  
+  }
+  // adding styles to the rows 
+  td, th {
+    border: 1px solid white;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  // adding styles to the view button
+  button{
+      background-color: white;
+      border: 1px solid green; 
+      color:green;
+      font-weight: bolder;
+      cursor: pointer; 
+      position: relative;
+      margin:5px;
+      left:8px;
+  }

@@ -1,0 +1,46 @@
+.form{
+    // visibility: hidden;
+    border: 1px solid green; 
+    background-color: #4CAF50;
+    box-shadow: 5px 10px #888888;
+    display: block;
+    position: absolute ;
+    top:180px;
+    left:500px;
+    color: black;
+    z-index: 20;
+    }
+// adding styles to the labels inside the form
+    form label{
+        display: block;
+        margin: 0px 0px 15px 0px;
+    }
+
+//  adding styles to the fields inside the form
+  form input{
+    right:5px;
+    margin: 10px;
+    border: 1px solid green; 
+  }
+
+  //  adding styles to the 3 buttons on the form
+    .form button {
+
+        background-color: white;
+        border: 1px solid green; 
+        color:green;
+        font-weight: bolder;
+        margin: 25px;
+        cursor: pointer; 
+        float: left; 
+      }
+
+      // adding styles to the headings
+      label > span{
+        width: 100px;
+        font-weight: bold;
+        float: left;
+        padding-top: 8px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }

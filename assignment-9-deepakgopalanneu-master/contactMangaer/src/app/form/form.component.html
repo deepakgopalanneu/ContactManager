@@ -1,0 +1,11 @@
+<div  class= "form">
+    <form>
+        <label for="fname"><span>First Name</span><input #fname type="text" minlength="2" name="fname" value="" /></label>
+        <label for="lname"><span>Last Name</span><input type="text" #lname minlength="2"  name="lname" value="" /></label>
+        <label for="email"><span>Email </span><input type="text" #emailId name="email" value="" /></label>
+        <label><span>Phone</span><input class="phone" #phonenum name="phone" value="" minlength= "10" maxlength="10"  type="number"/></label>
+        <button type="button" (click)="sendNewContact()" class= 'submit' > Submit </button>
+        <button type="reset" value="Reset">Reset</button>
+        <button (click)="close()" type="button"> close </button>
+      </form>
+</div>

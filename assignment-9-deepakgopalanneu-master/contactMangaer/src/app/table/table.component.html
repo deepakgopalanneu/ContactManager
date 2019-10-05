@@ -1,0 +1,12 @@
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let contact of contacts">
+      <td> {{contact.firstname}} {{contact.lastname}}</td>
+      <td > <button (click)= viewcontact(contact._id)>view</button></td>
+    </tr>
+  </table>
+</div>

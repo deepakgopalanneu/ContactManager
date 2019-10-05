@@ -1,0 +1,17 @@
+<!-- Nav Bar component has add button and title -->
+<app-nav-bar [title] = "title" (add)= "changevisibility()" ></app-nav-bar>
+<!-- the form component has the input form  -->
+<app-form *ngIf= "visible"  (closeform)="changevisibility()" (now) = "getAllContacts()" ></app-form>
+<!-- table component has the table which loads based on the get request -->
+<app-table (selectedcontact)= "showform($event)" [contacts]="contacts" ></app-table>
+
+<!-- this is the contact card which is displayed on the app-root itself -->
+<div *ngIf="show" class="contactcard">
+  <div> Name : {{viewSelectedContact.firstname}} {{viewSelectedContact.lastname}} </div>
+  <div> Phone :{{viewSelectedContact.phone}}</div>
+  <div> Email : {{viewSelectedContact.email}}</div>
+  <div><button (click)="closeform()" > Close </button></div>
+</div>
+
+
+<router-outlet></router-outlet>
